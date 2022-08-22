@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp</title>
+    <script
+      src="https://kit.fontawesome.com/cbaf5cde04.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            xs: "200px",
+            sm: "640px",
+            md: "768px",
+            lg: "1024px",
+            xl: "1280px",
+            "2xl": "1536px",
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 text-gray-200"
+  >
+    <div class="h-screen flex flex-col justify-center items-center">
+      <div class="text-3xl mb-10 font-bold">Sign Up!</div>
+      <div class="w-1/5">
+        
+          <input id="email"
+            class="px-5 py-3 rounded-tl-xl rounded-tr-xl border-b-2 placeholder:text-slate-500 text-slate-500"
+            type="email"
+            name="email"
+            placeholder="Email"
+          />
+          <input id="password"
+            class="px-5 py-3 rounded-br-xl rounded-bl-xl placeholder:text-slate-500 text-slate-500"
+            type="password"
+            name="password"
+            placeholder="Password"
+          />
+          <div
+          id="btn"
+            class="mt-10 py-3 px-8 text-2xl rounded-xl bg-[#191836] hover:bg-[#20183F] text-center font-bold"
+            
+          >
+            Sign me up!
+          </div>
+        
+      </div>
+    </div>
+    <script src="signup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <script
+      src="https://kit.fontawesome.com/cbaf5cde04.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            xs: "200px",
+            sm: "640px",
+            md: "768px",
+            lg: "1024px",
+            xl: "1280px",
+            "2xl": "1536px",
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 text-white"
+  >
+    <div class="h-screen flex flex-col justify-center items-center">
+      <div class="text-3xl mb-10 font-bold">Login</div>
+      <div class="w-1/5">
+        <form class="flex flex-col w-full" action="/" method="post">
+          <input
+            class="px-5 py-3 rounded-tl-xl rounded-tr-xl border-b-2 placeholder:text-slate-500 text-slate-500"
+            type="email"
+            name="email"
+            placeholder="Email"
+          />
+          <input
+            class="px-5 py-3 rounded-br-xl rounded-bl-xl placeholder:text-slate-500 text-slate-500"
+            type="password"
+            name="password"
+            placeholder="Password"
+          />
+          <button
+            class="mt-10 py-3 px-8 text-2xl rounded-xl bg-[#191836] hover:bg-[#20183F] text-center font-bold"
+            type="submit"
+          >
+            Login
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>
